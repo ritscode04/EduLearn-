@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💬 EduLearn Community</h1>
+        <p>Share your thoughts, ask questions, and engage!</p>
+    </header>
+
+    <div>
+        <h2>Create a Poll</h2>
+        <input type="text" id="pollQuestion" placeholder="Enter your poll question">
+        <button onclick="postPoll()">Post Poll</button>
+    </div>
+
+    <script>
+        function postPoll() {
+            let question = document.getElementById("pollQuestion").value;
+            alert("Poll posted: " + question);
+        }
+    </script>
+</body>
+</html>

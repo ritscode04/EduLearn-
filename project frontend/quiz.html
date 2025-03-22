@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🎯 JavaScript Quiz</h1>
+        <p>Test your knowledge with real-time scores!</p>
+    </header>
+
+    <div class="quiz-container">
+        <p id="question"></p>
+        <button class="quiz-btn" onclick="selectAnswer(0)">A) <span id="option0"></span></button>
+        <button class="quiz-btn" onclick="selectAnswer(1)">B) <span id="option1"></span></button>
+        <button class="quiz-btn" onclick="selectAnswer(2)">C) <span id="option2"></span></button>
+
+        <p id="result"></p>
+        <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <h2>🏆 Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+    <button onclick="submitScore()">Submit Score</button>
+
+</body>
+</html>
