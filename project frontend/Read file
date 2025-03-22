@@ -70,5 +70,14 @@
 2️⃣ Deploy using **Netlify/Vercel/Firebase Hosting**  
 
 ---
+EduLearn/
+│── index.html          (Homepage)
+│── login.html          (Login & Signup Page)
+│── courses.html        (List of available courses)
+│── quiz.html           (Quiz system)
+│── community.html      (Community Engagement)
+│── style.css           (CSS for styling)
+│── script.js           (JavaScript for logic)
+└── firebase.js         (Firebase Authentication & Database)
 
 🎯 **Final Goal:** A fully functional learning platform with courses, quizzes, and community features! 🚀
